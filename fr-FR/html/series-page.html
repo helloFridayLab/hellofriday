@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="#streaming #app #movies #series #tvshows" />
+    <meta name="description" content="helloFriday - Video Streaming App" />
+    <meta name="author" content="Funnyverse" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/style-contents.css" rel="stylesheet">
+    <link href="../../css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../../fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../../fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../../fontawesome/css/solid.css" rel="stylesheet">
+    <title>Séries · helloFriday.</title>
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <div class="container">
+  <!--========== Header ==============-->
+  <header>
+    <div id="nav">
+      <nav>
+        <ul>
+          <li><img class="brand-logo" src="../../assets/images/brand-logo.png" alt="logo"></li>
+          <li class="home-link"><a href="home-page.html" draggable="false"><strong>Accueil</strong></a></li>
+          <li class="movies-link"><a href="movies-page.html" draggable="false"><strong>Films</strong></a></li>
+          <li class="tv-shows-link"><a class="selected" draggable="false"><strong>Séries</strong></a></li>
+          <li class="animes-link"><a href="animes-page.html" draggable="false"><strong>Animés</strong></a></li>
+          <li class="novelas-link"><a href="novelas-page.html" draggable="false"><strong>Feuilletons</strong></a></li>
+          <li class="docus-link"><a href="docus-page.html" draggable="false"><strong>Documentaires</strong></a></li>
+          <li class="request-form-link"><a href="request-page.html" draggable="false"><strong>A Propos</strong></a></li>
+        </ul>
+      </nav>
+    </div> 
+    <h3 class="search-title">Rechercher la série de votre choix</h3>
+    <div class="section-search">
+      <form>
+          <select id="filter" class="search-select" name="search-select">
+            <option value="all">Tous</option>
+          </select>
+          <input type="text" id="search-input" class="search-input" placeholder="Entrer le nom de votre série" onkeyup="searchContent()"/>
+      </form>
+    </div>
+  </header>
+  <!--========== Header ==============-->
+  <!--Additional required wrapper-->
+  <div id="tv-shows" class="tv-shows">
+  </div>
+  <div class="video-container">
+    <div class="video-box">
+    </div>
+  </div>
+ <!-- Footer -->
+ <div id="footer" class="footer">
+   <p>Made with fun <a href="../request-page.html">🎈</a>.</p>
+ </div>
+    </div>
+    <div id="network_popup" class="network_popup hide">
+      <div id="n_popup_content" class="n_popup_content">
+        <h2>Oups, une erreur est survenue.</h2>
+        <p>Vérifiez votre connexion internet</p>
+      </div>
+    </div>
+     <!-- You can also require other files to run in this process -->
+ <script src="../../js/swiper-bundle.min.js"></script>
+ <script src="../../js/script-contents.js"></script>
+ <script src="../../js/sscript.js"></script>
+ <script src="../../js/jquery-3.6.0.js"></script>
+ <script src="../../js/check.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<a class="btn-download" href="#"><i class="fa fa-download"></i><strong> Télécharger</strong>
+
+/*
+.btn-download {
+    display: hidden;
+    color: white;
+    background: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 9px 20px;
+    display: inline-block;
+    margin-right: 0px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+}
+*/

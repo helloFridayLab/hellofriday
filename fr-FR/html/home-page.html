@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="#streaming #app #movies #series #tvshows" />
+    <meta name="description" content="helloFriday - Video Streaming App" />
+    <meta name="author" content="Funnyverse" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/style-home.css" rel="stylesheet">
+    <link rel="stylesheet" href="../plyr/dist/plyr.css"/>    
+    <link href="../../css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../../fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../../fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../../fontawesome/css/solid.css" rel="stylesheet">
+    <title>Accueil · helloFriday.</title>
+  </head>
+  <body>
+     <div id="preloader"></div>
+     <div class="container">
+     <!--========== Header ==============-->
+       <header>
+         <div id="nav">
+         </div> 
+         <div id="section" class="section">   
+            <div class="overlay"></div>
+            <div class="fadeBottom"></div>
+         </div>
+         <div>
+            <div class="a-la-une"><strong>🍿 helloFriday</strong></div> 
+            <div id="trending-content-name" class="movie-name"></div>
+            <div class="movie-metadata">
+               <span id="trending-content-type"></span>
+               <span id="trending-content-category"></span>
+               <span id="trending-content-duration"></span>
+            </div>
+            <div id="buttons" class="buttons">
+            </div>
+            <section id="trailer-frame" class="trailer-frame"></section>
+         </div>
+       </header>
+       <!--========== Header ==============-->
+       <div>
+          <!-- Nouveautés -->
+          <div>
+             <div class="heading">
+                <h3 class="heading-title"> Nouveautés</h3>
+                <div class="swiper-btn">
+                  <div class="news-swiper-pagination"></div>
+                </div>
+             </div>
+             <!--Additional required wrapper-->
+             <div id="new-content" class="news-content swiper">
+             <!--Slides-->
+             </div>
+          <!-- Occidentales -->
+          <div>
+            <div class="heading">
+               <h3 class="heading-title"> Productions Occidentales</h3>
+               <div class="swiper-btn">
+                  <div class="popular-swiper-pagination"></div>
+               </div>
+            </div>
+            <!--Additional required wrapper-->
+            <div id="popular-content" class="popular-content swiper">
+            <!--Slides-->
+            </div>
+          </div>
+          <!-- Découvrir -->
+          <div>
+            <div class="heading">
+               <h3 class="heading-title"> Productions Africaines</h3>
+               <div class="swiper-btn">
+                  <div class="explorer-swiper-pagination"></div>
+               </div>
+            </div>
+            <!--Additional required wrapper-->
+            <div id="explorer-content" class="explorer-content swiper">
+            <!--Slides-->
+            </div>
+          </div>
+       </div>
+       <div class="video-container">
+         <div class="video-box">
+         </div>
+       </div>
+       <!-- Footer -->
+       <div id="footer" class="footer">
+       </div>
+       </div>
+     </div>
+     <div id="network_popup" class="network_popup hide">
+      <div id="n_popup_content" class="n_popup_content">
+        <h2>Oups, une erreur est survenue.</h2>
+        <p>Vérifiez votre connexion internet</p>
+      </div>
+     </div>
+            <!-- You can also require other files to run in this process -->
+            <script src="./renderer.js"></script>
+            <script src="../plyr/dist/plyr.js"></script>
+            <script src="../variables.js"></script>
+            <script src="../../js/swiper-bundle.min.js"></script>
+            <script src="../../js/script-home.js"></script>
+            <script src="../../js/jquery-3.6.0.js"></script>
+            <script src="../../js/notif.js"></script>
+            <!--<script src="../js/check.js"></script>-->   
+  </body>
+</html>

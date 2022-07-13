@@ -1,0 +1,337 @@
+/* styles.css */
+
+/* Add styles here to customize the appearance of your app */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#preloader {
+    background: black url(../assets/images/loader.gif) no-repeat center center;
+    background-size: 35%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    height: 60px;
+    border-bottom: 0.5px solid rgb(177, 174, 174);
+    background: #0005;
+    cursor: default;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+div#nav {
+    background-image: url(../assets/images/navbar-img.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: default;
+}
+
+.home-link {
+    margin-left: 22px;
+}
+
+a {
+    color:rgb(155, 155, 155);
+    text-decoration: none;
+}
+
+.selected {
+    color: whitesmoke;
+}
+
+a:hover {
+    color:whitesmoke;
+}
+
+img.brand-logo {
+    margin-left: -1px;
+    margin-right: 7px;
+    margin-top: -9px;
+    margin-bottom: -10px;
+    width: 25px;
+    height: 35px;
+}
+
+.section-request {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.0rem;
+    margin-bottom: 4.0rem;
+}
+
+label[for="request-select-type"] {
+    margin-bottom: 10px;
+}
+
+label[for="request-select-category"] {
+    margin-bottom: 10px;
+}
+
+label[for="request-input"] {
+    margin-bottom: 10px;
+}
+
+.form-request {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: whitesmoke;
+    margin-top: 2.0rem;
+}
+
+.request-input {
+    top: 0;
+    margin-bottom: 20px;
+    color: white;
+    background: rgba(255, 255, 255, 0.055);
+    width: 450px;
+    height: 35px;
+    font-size: 15px;
+    font-style: italic;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    outline: none;
+    padding: 0 10px 0 5px;
+    backdrop-filter: blur(10px);
+    cursor: default;
+}
+
+.request-select-type {
+    top: 0;
+    margin-bottom: 20px;
+    color: white;
+    background: transparent;
+    width: 450px;
+    height: 35px;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    margin-right: 3px;
+    padding: 0 10px 0 5px;
+    backdrop-filter: blur(10px);
+}
+
+.request-select-type > option {
+    background: black;
+    color: white;
+}
+
+.request-select-category {
+    top: 0;
+    margin-bottom: 20px;
+    color: white;
+    background: transparent;
+    width: 450px;
+    height: 35px;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    margin-right: 3px;
+    padding: 0 10px 0 5px;
+    backdrop-filter: blur(10px);
+}
+
+.request-select-category > option {
+    background: black;
+    color: white;
+}
+
+.request-input::placeholder {
+    color: white;
+}
+
+.request-btn {
+    background-color: rgba(0, 0, 0, 0.2);
+    color:grey;
+    width: 85px;
+    height: 35px;
+    font-size: 15px;
+    border-color:grey;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-left: 3px;
+    margin-right: 0px;
+    align-self: center;
+}
+
+.request-btn:hover {
+    color:white;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+}
+
+p.request-title {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.request-subtitle {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.request-subtitle span {
+    width: 7px;
+}
+
+p.request-subtitle strong {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.load-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load-more-btn {
+    background-color: rgb(0, 145, 202);
+    transition: 0.5s all linear;
+    padding: 12px 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.request-title {
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 5px;  
+}
+
+.request-subtitle {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 5px;  
+}
+
+.network_popup {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.network_popup.hide {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.n_popup_content {
+    background: rgb(15, 15, 15);
+    width: 435px;
+    height: 95px;
+    position: relative;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.n_popup_content h2 {
+    padding-left: 37px;
+    padding-right: 35px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    background: rgb(15, 15, 15);
+    color: white;
+}
+
+.n_popup_content p {
+    padding-left: 98px;
+    padding-right: 55px;
+    margin-bottom: 2px;
+    background: rgb(15, 15, 15);
+    color: white;
+}
+
+.container.hide {
+    display: none;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.7rem;
+    color: whitesmoke;
+    padding: 12px 20px;
+    font-weight: 500;
+}
+
+.footer p {
+    font-style: italic;
+}
+
+.footer p a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(73, 73, 73);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(107, 107, 107);
+}
+
+@media(min-width: 970px) {
+
+    .home-link {
+        margin-left: 19%;
+    }
+
+    .search-title {
+        margin-top: 70px;
+    }
+}
